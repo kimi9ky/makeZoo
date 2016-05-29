@@ -1,0 +1,186 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Bloga\n"
+"POT-Creation-Date: 2015-12-17 00:33+0600\n"
+"PO-Revision-Date: 2015-12-17 00:33+0600\n"
+"Last-Translator: \n"
+"Language-Team: xltheme <support@xltheme.com>\n"
+"Language: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__;esc_html_e;esc_html;_x;esc_html_x\n"
+"X-Poedit-Basepath: C:\\wamp\\www\\projects\\XL\\wp\\bloga\\wp-content\\themes"
+"\\bloga\\languages\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:19
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: ../404.php:23
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: ../comments.php:40 ../comments.php:61
+msgid "Comment navigation"
+msgstr ""
+
+#: ../comments.php:43 ../comments.php:64
+msgid "Older Comments"
+msgstr ""
+
+#: ../comments.php:44 ../comments.php:65
+msgid "Newer Comments"
+msgstr ""
+
+#: ../comments.php:77
+msgid "Comments are closed."
+msgstr ""
+
+#: ../comments.php:88
+msgid "Name"
+msgstr ""
+
+#: ../comments.php:89
+msgid "Email"
+msgstr ""
+
+#: ../comments.php:92
+msgid "Website url"
+msgstr ""
+
+#: ../comments.php:102
+msgid "Comment"
+msgstr ""
+
+#: ../footer.php:29
+msgid "https://wordpress.org/"
+msgstr ""
+
+#: ../footer.php:29
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: ../footer.php:31
+#, php-format
+msgid "Theme: Bloga by %1$s."
+msgstr ""
+
+#: ../functions.php:50
+msgid "Primary Menu"
+msgstr ""
+
+#: ../functions.php:110
+msgid "Sidebar"
+msgstr ""
+
+#: ../functions.php:120
+msgid "Footer Widget"
+msgstr ""
+
+#: ../functions.php:158
+msgid "Create a Menu"
+msgstr ""
+
+#: ../functions.php:160
+msgid "Home"
+msgstr ""
+
+#: ../header.php:26
+msgid "Skip to content"
+msgstr ""
+
+#: ../header.php:38
+msgid "Toggle navigation"
+msgstr ""
+
+#: ../search.php:21
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: ../searchform.php:2
+msgid "Blog Search"
+msgstr ""
+
+#: ../inc/template-tags.php:19
+msgid "Format"
+msgstr ""
+
+#: ../inc/template-tags.php:38
+#, php-format
+msgid "Posted on %s"
+msgstr ""
+
+#: ../inc/template-tags.php:43
+#, php-format
+msgid "by %s"
+msgstr ""
+
+#: ../inc/template-tags.php:60 ../inc/template-tags.php:66
+msgid ", "
+msgstr ""
+
+#: ../inc/template-tags.php:62
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: ../inc/template-tags.php:68
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: ../inc/template-tags.php:74
+msgid "Leave a comment"
+msgstr ""
+
+#: ../inc/template-tags.php:74
+msgid "1 Comment"
+msgstr ""
+
+#: ../inc/template-tags.php:74
+msgid "% Comments"
+msgstr ""
+
+#: ../inc/template-tags.php:78 ../template-parts/content-page.php:28
+msgid "Edit"
+msgstr ""
+
+#: ../template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: ../template-parts/content-none.php:20
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: ../template-parts/content-none.php:24
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: ../template-parts/content-none.php:29
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: ../template-parts/content-page.php:21
+#: ../template-parts/content-single.php:38 ../template-parts/content.php:46
+msgid "Pages:"
+msgstr ""
+
+#: ../template-parts/content.php:39
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""

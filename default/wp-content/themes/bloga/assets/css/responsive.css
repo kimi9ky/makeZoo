@@ -1,0 +1,250 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+
+
+}
+
+/* Medium Devices, Desktops */
+
+@media (max-width: 992px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+        margin-top: 27px;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+
+    .navbar-default .navbar-nav>li>a:after {
+        content: "";
+        height: 0;
+    }
+    .sub-menu.sm-nowrap ul {
+        margin-top: 0px !important; 
+    }
+    .menu.padding-0 .sub-menu.sm-nowrap ul {
+        margin-top: 0px !important;
+    }
+    .navbar-collapse.in {
+        overflow-y: auto!important;
+        border: 0;
+        max-height: 340px;
+    }
+
+
+}
+
+
+@media only screen and (max-width : 991px) {
+    .carousel-inner .item {
+         padding: 0px; 
+    }
+
+    .mac-slide .carousel-indicators {
+        bottom: -40px;
+    }
+    .position-ab {
+        top: 4%;                 
+    }
+
+    .tab-area {
+        margin-top: 50px;
+    }
+
+    .single-post {
+        margin-bottom: 50px;
+    }
+
+    .sidebar-widget {
+        margin-top: 80px;
+    }
+
+    .project-details-area {
+        margin-top: 50px;
+    }
+    #scroll-to-top {
+        bottom: 60px;
+    }
+
+    .social {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .copyright {
+        text-align: center;
+    }
+
+    .footer-block {
+        float: none !important;
+    }
+
+}
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+
+    .single-service {
+        padding: 0 100px;
+    }
+
+
+}
+
+@media only screen and (max-width : 600px) {
+
+    .slider-area .section-padding {
+        padding: 80px 0;
+    }
+    .slider-btn {
+        margin: 10px 5px;
+    }
+
+    .slider-title {
+        font-size: 3.25em;
+    }
+    .slider-description {
+        font-size: 1.5em;
+        line-height: 35px;             
+    }
+
+    .section-details, .single-service {
+        padding: 0;
+    }
+    .mac-slide .carousel-indicators {
+        bottom: 0;
+    }
+    .position-ab {
+        top: 3%;                 
+    }
+    .left-form, .right-form {
+        width: 100%;
+    }
+
+    form#commentform {
+        margin-bottom: 50px;
+        display: block;
+        overflow: hidden;
+    }
+
+    .submit-form {
+        position: absolute;
+        bottom: 10px;
+    }
+
+    #blog-slider .carousel-indicators {
+        /*bottom: 50px;*/
+        display: none;
+    }
+    #blog-slider .carousel-inner>.active {
+        margin-bottom: 0px; 
+    }
+    #blog-slider .carousel-inner {
+        height: auto;
+    }
+
+    #scroll-to-top {
+        display: none !important;
+    }
+
+}
+
+
+@media only screen and (max-width : 550px) {
+
+    #blog-slider .carousel-inner {
+        /*height: 190px;;*/
+    }
+
+    .entry-meta .byline {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .position-ab {
+        top: 2%;                 
+    }
+
+}
+
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+    .children {
+        padding-left: 15px !important;
+    }
+
+    /*#scroll-to-top {
+        bottom: 120px;
+        right: 1px;
+    }*/
+
+
+
+}
+
+@media only screen and (max-width : 380px) {
+    .position-ab {
+        top: 1.5%;
+    }
+}
+
+
+@media only screen and (max-width : 330px) {
+    
+    .slider-btn {
+        margin: 10px 5px;
+    }
+    .position-ab {
+        top: 1%;
+    }
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+    
+
+
+
+}
+
+
+
+
+
+
+
+
+
