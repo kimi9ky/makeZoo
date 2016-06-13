@@ -163,6 +163,20 @@ function bloga_default_menu(){
 }
 
 /**
+ * repleace Ultimate Member google fonts
+ * http://www.wpdaxue.com/ultimate-member.html
+ */
+function cmp_replace_google_webfont() {
+	if ( class_exists( 'reduxCoreEnqueue' ) ) {
+		wp_enqueue_script('jquery');
+		wp_deregister_script('webfontloader');
+		wp_register_script('webfontloader', 'http://ajax.useso.com/ajax/libs/webfont/1.5.0/webfont.js',array('jquery'),'1.5.0',true);
+		wp_enqueue_script('webfontloader');
+	}
+}
+add_action('admin_enqueue_scripts', 'cmp_replace_google_webfont',9);
+
+/**
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
