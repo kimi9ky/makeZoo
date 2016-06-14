@@ -613,7 +613,7 @@ if ( ! class_exists( 'ReduxFramework_typography' ) ) {
             }
 
 
-            return '//fonts.googleapis.com/css?family=' . str_replace( '|', '%7C', $link );
+            return '//fonts.useso.com/css?family=' . str_replace( '|', '%7C', $link );
         }
 
         /**

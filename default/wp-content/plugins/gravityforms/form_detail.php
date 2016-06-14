@@ -185,7 +185,7 @@ class GFFormDetail {
 
 		<?php // link to the google webfont library ?>
 		<style type="text/css">
-			@import url('//fonts.googleapis.com/css?family=Shadows+Into+Light+Two');
+			@import url('//fonts.useso.com/css?family=Shadows+Into+Light+Two');
 		</style>
 
 		<form method="post" id="form_trash">
@@ -326,7 +326,7 @@ class GFFormDetail {
 
 				<?php // link to the google webfont library ?>
 				<style type="text/css">
-					@import url('//fonts.googleapis.com/css?family=Shadows+Into+Light+Two');
+					@import url('//fonts.useso.com/css?family=Shadows+Into+Light+Two');
 				</style>
 				<li id="no-fields">
 

@@ -98,7 +98,7 @@ function mm_cs_content() {
 <html>
 <head>
 <title>" . get_option( 'blogname' ) . " &mdash; Coming Soon</title>
-<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+<link href='https://fonts.useso.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 " . mm_cs_meta() . "
 <style type='text/css'>
 body{
