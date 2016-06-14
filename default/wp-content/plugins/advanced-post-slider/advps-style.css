@@ -39,6 +39,9 @@
 .advs-title a{
 	font-weight:bold;
 	text-decoration:none;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	overflow:hidden;width:20px;
 }
 /* ---------------------  navigation -----------------*/
 .advps-number{
