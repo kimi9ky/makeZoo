@@ -39,9 +39,6 @@
 .advs-title a{
 	font-weight:bold;
 	text-decoration:none;
-	text-overflow:ellipsis;
-	white-space:nowrap;
-	overflow:hidden;width:20px;
 }
 /* ---------------------  navigation -----------------*/
 .advps-number{
@@ -134,6 +131,10 @@
 .advps-slide-container .advs-title
 {
 	line-height:30px;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+    width:20px;
 }
 
 /************************************** bx slider css *********************************************/
