@@ -439,6 +439,11 @@ return b?(parseFloat(Sa(a,"marginLeft"))||(n.contains(a.ownerDocument,a)?a.getBo
         float: right;
     }
 
+    .title-length-fixed {
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
 </style>
 
 	<?php while ( have_posts() ) : the_post(); ?> 
@@ -485,7 +490,7 @@ return b?(parseFloat(Sa(a,"marginLeft"))||(n.contains(a.ownerDocument,a)?a.getBo
 				echo '<a href="' . $author_link . '"'. get_the_author_link().'">'. get_the_author_link(). '</a>';
 			 ?>
 			</div>
-			<div class = "post_info post_title"><?php the_title(); ?><img src="/wp-content/themes/ultra/inc/panels-lite/images/customized_icons/visited.png" alt="Smiley face" width="20" height = "20"><?php echo do_shortcode('[hit_count post='.$post->ID.']');?></div>
+			<div class = "post_info post_title title-length-fixed"><?php the_title(); ?><img src="/wp-content/themes/ultra/inc/panels-lite/images/customized_icons/visited.png" alt="Smiley face" width="20" height = "20"><?php echo do_shortcode('[hit_count post='.$post->ID.']');?></div>
 			<div class = "post_info">Posted on<span style= "margin-left:30px;"><?php the_date(); ?></span></div>
 			<div class = "post_info">Posted in <span style= "margin-left:30px;"><?php the_category( ' ' ); ?><span></div>
 			<div id = "fav_or_download">
@@ -501,7 +506,7 @@ return b?(parseFloat(Sa(a,"marginLeft"))||(n.contains(a.ownerDocument,a)?a.getBo
 		</div>
 		<div id="right">
 			<div class = "top">
-				<div><?php the_title(); ?></div>
+				<div class= "title-length-fixed"><?php the_title(); ?></div>
 				<div>
 					<div class = "icons">
 						<img src="/wp-content/themes/ultra/inc/panels-lite/images/customized_icons/visited2.png" alt="浏览" width="30" height = "30">
