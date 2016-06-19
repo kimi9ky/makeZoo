@@ -3725,6 +3725,7 @@ article:last-of-type {
 .comments-area .comment-content p {
   font-size: 0.92857em;
   line-height: 1.92308em;
+  word-break: break-all;
 }
 .comments-area .comment-content p:last-of-type {
   margin-bottom: 0.8438em;
