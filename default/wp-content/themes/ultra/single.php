@@ -288,7 +288,7 @@ return b?(parseFloat(Sa(a,"marginLeft"))||(n.contains(a.ownerDocument,a)?a.getBo
 		margin-right: 40px;
 		line-height:16px;
 		font-family: Arial, Tahoma, Helvetica, "HiraginoSansGB-W6", "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", "宋体", SimSun, STXihei, "华文细黑", sans-serif !important;
-		word-break:break-word;
+		word-break: break-all;
 	}
 	.post_info > img{
 		margin-left: 20px;
@@ -324,7 +324,7 @@ return b?(parseFloat(Sa(a,"marginLeft"))||(n.contains(a.ownerDocument,a)?a.getBo
 		border-top-left-radius: 7px;
 		border-top-right-radius: 7px;
 		min-height: 170px;
-		word-break:break-word;
+		word-break: break-all;
 	}
 	#right .top > div:nth-child(1){
 		font-family: Arial, Tahoma, Helvetica, "HiraginoSansGB-W6", "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", "宋体", SimSun, STXihei, "华文细黑", sans-serif !important;
@@ -431,7 +431,7 @@ return b?(parseFloat(Sa(a,"marginLeft"))||(n.contains(a.ownerDocument,a)?a.getBo
 		margin-top:30px;
 		font-size:14px;
 		color:#949494;
-		word-break:break-word;
+		word-break: break-all;
 	}
 
     .evenodd p:nth-child(2n - 1) {
