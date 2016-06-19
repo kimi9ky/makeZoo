@@ -803,7 +803,9 @@ article.sticky .featured-post {
 }
 .entry-content p,
 .entry-summary p,
-.comment-content p,
+.comment-content p {
+	word-break: break-all;
+}
 .mu_register p {
 	margin: 0 0 24px;
 	margin: 0 0 1.714285714rem;
