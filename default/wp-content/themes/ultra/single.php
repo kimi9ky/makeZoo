@@ -623,12 +623,20 @@ return b?(parseFloat(Sa(a,"marginLeft"))||(n.contains(a.ownerDocument,a)?a.getBo
 
 <?php
 
-    $request = "SELECT meta_value FROM ".$wpdb->prefix."postmeta WHERE post_id = $post_id AND (meta_key = 'steps' OR meta_key = 'steps_photos') ORDER BY meta_id";
-    $results = $wpdb->get_results($request);
-    $sz = count($results);
-    for ($kx = 0; $kx < $sz / 2; $kx += 1) {
-        $dsc = $results[$kx]->{'meta_value'};
-        $img = $results[$sz - $kx - 1]->{'meta_value'};
+    $requestDsc = "SELECT meta_value FROM ".$wpdb->prefix."postmeta WHERE post_id = $post_id AND meta_key = 'steps' ORDER BY meta_id";
+    $resultsDsc = $wpdb->get_results($requestDsc);
+    $sz = count($resultsDsc);
+
+    $requestImg = "SELECT meta_value FROM ".$wpdb->prefix."postmeta WHERE post_id = $post_id AND meta_key = 'steps_photos' ORDER BY meta_id";
+    $resultsImg = $wpdb->get_results($requestImg);
+    $szImg = count($resultsImg);
+    if ($szDsc< count($resultsImg)){
+		$szDsc= count($resultsImg);
+		}
+
+    for ($kx = 0; $kx < $sz; $kx += 1) {
+        $dsc = $resultsDsc[$kx]->{'meta_value'};
+        $img = $resultsImg[$kx]->{'meta_value'};
         $num = $kx + 1;
 echo <<<EOT
     <div class = "step-items">
