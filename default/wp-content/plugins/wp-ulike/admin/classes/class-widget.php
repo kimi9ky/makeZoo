@@ -55,11 +55,10 @@ class wp_ulike_widget extends WP_Widget {
 			$post_count = $post->meta_value;
 			
 			echo $settings['before_item'];
-			echo '<a href="' . $permalink . '" title="' . $post_title.'" rel="nofollow">';
-			echo "<img src='";
+			echo "<div onclick='window.location.href="' . $permalink . '" title="' . $post_title.'"; return false' class='wp_ulike_imgcontainer' style='background-image:url(\"";
             echo $settings['show_thumb'] == '1' ? $this->get_post_thumbnail_src($post->ID, $settings['sizeOf']) : '';
-            echo "'/>";
-			echo "</a>";
+            echo "\")'>";
+			echo "</div>";
 
 			echo "<div>"; 
 			echo '<p><a href="' . $permalink . '" title="' . $post_title.'" rel="nofollow">'. $post_title. '</a></p>';
