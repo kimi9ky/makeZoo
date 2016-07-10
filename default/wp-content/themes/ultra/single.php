@@ -536,7 +536,7 @@ return b?(parseFloat(Sa(a,"marginLeft"))||(n.contains(a.ownerDocument,a)?a.getBo
 					<div class = "half">
 						<div class = "title">打印设置</div>
 						<div class = "half">
-							<div class = "item">层厚:<span><?php get_meta_value("layers");?>cm</span></div>
+							<div class = "item">层厚:<span><?php get_meta_value("layers");?>mm</span></div>
 							<div class = "item">填充率:<span><?php get_meta_value("loukong");?>%</span></div>
 							<div class = "item">打印速度:<span><?php get_meta_value("printing-speed");?>mm/s</span></div>
 							<div class = "item">外壳厚度:<span><?php get_meta_value("thickness");?>mm</span></div>
