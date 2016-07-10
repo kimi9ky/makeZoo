@@ -635,8 +635,18 @@ return b?(parseFloat(Sa(a,"marginLeft"))||(n.contains(a.ownerDocument,a)?a.getBo
 		}
 
     for ($kx = 0; $kx < $sz; $kx += 1) {
-        $dsc = $resultsDsc[$kx]->{'meta_value'};
-        $img = $resultsImg[$kx]->{'meta_value'};
+		if (isset( $resultsDsc[$kx])){
+			$dsc = $resultsDsc[$kx]->{'meta_value'};
+		}
+		else{
+			$dsc= '';
+		}
+		if (isset( $resultsImg[$kx])){
+			$img = $resultsImg[$kx]->{'meta_value'};
+		}
+		else{
+			$img= '';
+		}
         $num = $kx + 1;
 echo <<<EOT
     <div class = "step-items">
