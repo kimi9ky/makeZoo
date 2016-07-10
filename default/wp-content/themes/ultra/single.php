@@ -642,7 +642,7 @@ return b?(parseFloat(Sa(a,"marginLeft"))||(n.contains(a.ownerDocument,a)?a.getBo
 			$dsc= '';
 		}
 		if (isset( $resultsImg[$kx])){
-			$img = $resultsImg[$kx]->{'meta_value'};
+			$img = $resultsImg[$sz-$kx-1]->{'meta_value'};
 		}
 		else{
 			$img= '';
