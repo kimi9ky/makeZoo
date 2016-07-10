@@ -56,7 +56,7 @@ class wp_ulike_widget extends WP_Widget {
 			
 			echo $settings['before_item'];
 			echo "<div onclick='window.location.href=" . $permalink . "'>"
-			echo "<div class='wp_ulike_imgcontainer' style='background-image:url(\"";
+			echo "<div class='wp_ulike_imgcontainer' style='background-image:url(\'";
             echo $settings['show_thumb'] == '1' ? $this->get_post_thumbnail_src($post->ID, $settings['sizeOf']) : '';
             echo "\")'>";
 			echo "</div></div>";
