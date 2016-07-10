@@ -53,15 +53,13 @@ class wp_ulike_widget extends WP_Widget {
 			$author_id = $post->post_author;
 			$author_link = get_author_posts_url($author_id);
 			$post_count = $post->meta_value;
-			
+
 			echo $settings['before_item'];
-			echo '<div onclick="window.location.href=' . $permalink . '">'
 			echo "<div class='wp_ulike_imgcontainer' style='background-image:url(\"";
             echo $settings['show_thumb'] == '1' ? $this->get_post_thumbnail_src($post->ID, $settings['sizeOf']) : '';
             echo "\")'>";
 			echo '<a href="' . $permalink . '" title="' . $post_title.'" rel="nofollow">';
 			echo "</div></a>";
-			echo '</div>';
 
 			echo "<div>"; 
 			echo '<p><a href="' . $permalink . '" title="' . $post_title.'" rel="nofollow">'. $post_title. '</a></p>';
