@@ -629,9 +629,9 @@ return b?(parseFloat(Sa(a,"marginLeft"))||(n.contains(a.ownerDocument,a)?a.getBo
 
     $requestImg = "SELECT meta_value FROM ".$wpdb->prefix."postmeta WHERE post_id = $post_id AND meta_key = 'steps_photos' ORDER BY meta_id";
     $resultsImg = $wpdb->get_results($requestImg);
-    $szImg = count($resultsImg);
-    if ($szDsc< count($resultsImg)){
-		$szDsc= count($resultsImg);
+
+    if ($sz< count($resultsImg)){
+		$sz= count($resultsImg);
 		}
 
     for ($kx = 0; $kx < $sz; $kx += 1) {
