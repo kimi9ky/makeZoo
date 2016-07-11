@@ -1,6 +1,10 @@
 <?php
 /**
- * Templata Nmae : Contact
+ * Template Name: Contact Page
+ *
+ * @package WordPress
+ * @subpackage Twenty_Fourteen
+ * @since Twenty Fourteen 1.0
  */
 
 get_header(); ?>
@@ -9,6 +13,7 @@ get_header(); ?>
 		<div class="container">
 			<h1 class="entry-title"><?php echo get_the_title(); ?></h1><?php ultra_breadcrumb(); ?>
 		</div><!-- .container -->
+		123
 	</header><!-- .entry-header -->		
 
 	<div class="container">
