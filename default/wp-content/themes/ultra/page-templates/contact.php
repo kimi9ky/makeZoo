@@ -7,7 +7,17 @@
  * @since Twenty Fourteen 1.0
  */
 ?>
+<?php
+$txt = "hello";
 
+// 以下的邮箱地址改成你的
+$mail = 'kimi9ky@163.com';
+
+// 发送邮件
+mail($mail, "My subject", $txt);
+
+echo 'message was sent!';
+?>
 <?php
 if(isset($_POST['submitted'])) {
 	if(trim($_POST['contactName']) === '') {
