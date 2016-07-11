@@ -271,16 +271,7 @@ class SMTP
         $errno = 0;
         $errstr = '';
         if ($streamok) {
-            $socket_context = stream_context_create($options);
-            //Suppress errors; connection failures are handled at a higher level
-            $this->smtp_conn = @stream_socket_client(
-                $host . ":" . $port,
-                $errno,
-                $errstr,
-                $timeout,
-                STREAM_CLIENT_CONNECT,
-                $socket_context
-            );
+            $this->smtp_conn = @fsockopen($host,$port,$errno,$errstr,$timeout);
         } else {
             //Fall back to fsockopen which should work in more places, but is missing some features
             $this->edebug(
