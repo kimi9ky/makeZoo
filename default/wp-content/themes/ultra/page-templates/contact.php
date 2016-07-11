@@ -8,15 +8,8 @@
  */
 ?>
 <?php
-$txt = "hello";
-
-// 以下的邮箱地址改成你的
-$mail = 'kimi9ky@163.com';
-
-// 发送邮件
-mail($mail, "My subject", $txt);
-
-echo 'message was sent!';
+if (function_exists('mail')) echo "^_^ mail()函数可以使用！";
+else echo "- -! mail()函数不可以使用！";
 ?>
 <?php
 if(isset($_POST['submitted'])) {
