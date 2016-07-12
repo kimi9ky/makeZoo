@@ -433,14 +433,15 @@ return b?(parseFloat(Sa(a,"marginLeft"))||(n.contains(a.ownerDocument,a)?a.getBo
 		color:#949494;
 		word-break: break-all;
 	}
-
-    .evenodd p:nth-child(2n - 1) {
-        float: left;
-    }
-    
-    .evenodd p:nth-child(2n) {
-        float: right;
-    }
+  .evenodd p:nth-child(2n - 1) {
+      float: left;
+  }
+  .evenodd p:nth-child(2n) {
+      float: right;
+  }
+  .pic-size {
+  	background-size: cover;
+  }
 
 </style>
 
@@ -650,8 +651,8 @@ return b?(parseFloat(Sa(a,"marginLeft"))||(n.contains(a.ownerDocument,a)?a.getBo
         $num = $kx + 1;
 echo <<<EOT
     <div class = "step-items">
-        <div class = "step-photo">
-            <img src="$img" />
+        <div class="step-photo">
+      			<div class='pic-size' style='background-image:url("$img")' />
         </div>
         <div class = "step-desc">
             <div class = "step-title">Step $num</div>
