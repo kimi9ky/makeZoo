@@ -417,8 +417,9 @@ return b?(parseFloat(Sa(a,"marginLeft"))||(n.contains(a.ownerDocument,a)?a.getBo
 	.step-photo {
 		float: left;
 		width: 400px;
-		height: 100%;
+		height: 400px;
 		margin-right: 50px;
+		background-size: cover;
 	}
 	.step-desc{
 		float: left;
@@ -651,8 +652,7 @@ return b?(parseFloat(Sa(a,"marginLeft"))||(n.contains(a.ownerDocument,a)?a.getBo
         $num = $kx + 1;
 echo <<<EOT
     <div class = "step-items">
-        <div class="step-photo">
-      			<div class='pic-size' style='background-image:url("$img")' />
+        <div class="step-photo" style="background-image:url('$img')">
         </div>
         <div class = "step-desc">
             <div class = "step-title">Step $num</div>
