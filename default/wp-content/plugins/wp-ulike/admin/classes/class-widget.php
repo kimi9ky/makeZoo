@@ -118,17 +118,19 @@ class wp_ulike_widget extends WP_Widget {
 			$post_count = $post->meta_value;
 			
 			echo $settings['before_item'];
-			echo "<div class='wp_ulike_imgcontainer' style='background-image:url(\"";
-            echo $settings['show_thumb'] == '1' ? $this->get_post_thumbnail_src($post->ID, $settings['sizeOf']) : '';
-            echo "\")'>";
+			echo '<a href="' . $permalink . '" title="' . $post_title.'" rel="nofollow">';
+			echo "<div class='wp_ulike_imgcontainer' style='height: 225px; width 268px; background-image:url(\"";
+			echo $settings['show_thumb'] == '1' ? $this->get_post_thumbnail_src($post->ID, $settings['sizeOf']) : '';
+			echo "\")'>";
 			echo "</div>";
+			echo "</a>";
 
 			echo "<div>"; 
 			echo '<p><a href="' . $permalink . '" title="' . $post_title.'" rel="nofollow">'. $post_title . '</a></p>';
 			echo "<p>";
 			echo the_category( ' ', ' ', $post_id);
 			echo "</p>";
-			echo '<p>作者1<a href="' . $author_link . '"'. $post_author.'">'. $post_author . '</a></p>';
+			echo '<p>作者<a href="' . $author_link . '"'. $post_author.'">'. $post_author . '</a></p>';
 			echo "</div>";
 
 			echo "<div>";
