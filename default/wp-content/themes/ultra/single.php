@@ -444,6 +444,10 @@ return b?(parseFloat(Sa(a,"marginLeft"))||(n.contains(a.ownerDocument,a)?a.getBo
   .pic-size {
   	background-size: cover;
   }
+  .author-overlap{
+  	margin-left: 0 !important; 
+  	line-height: inherit !important; 
+  }
 
 </style>
 
