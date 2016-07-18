@@ -3825,6 +3825,8 @@ article:last-of-type {
 }
 .comments-area .comment-respond .form-submit {
   margin-top: 0.89286em;
+  padding-top: 30px;
+  float: right;
 }
 .comments-area .comment-respond p:last-of-type {
   margin-bottom: 0;
