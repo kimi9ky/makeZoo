@@ -291,7 +291,7 @@ return b?(parseFloat(Sa(a,"marginLeft"))||(n.contains(a.ownerDocument,a)?a.getBo
 		word-break: break-all;
 	}
 	.post_info > img{
-		margin-left: 20px;
+		margin-top: 10px;
 		margin-right: 10px;
 	}
 	.post_info .hit-count{
