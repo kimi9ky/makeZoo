@@ -419,7 +419,8 @@ return b?(parseFloat(Sa(a,"marginLeft"))||(n.contains(a.ownerDocument,a)?a.getBo
 		width: 400px;
 		height: 400px;
 		margin-right: 50px;
-		background-size: cover;
+		background-size: contain;
+		background-repeat: no-repeat;
 	}
 	.step-desc{
 		float: left;
