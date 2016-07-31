@@ -9,7 +9,7 @@
 
 define( 'SITEORIGIN_THEME_VERSION' , '1.0.2' );
 define( 'SITEORIGIN_THEME_ENDPOINT' , 'http://updates.purothemes.com' );
-//include_once( ABSPATH . 'wp-content/plugins/gravity-forms-update-post/gravityforms-update-post.php');
+include_once( ABSPATH . 'wp-content/plugins/gravity-forms-update-post/gravityforms-update-post.php');
 if( file_exists( get_template_directory() . '/premium/functions.php' ) ){
 	include get_template_directory() . '/premium/functions.php';
 }
