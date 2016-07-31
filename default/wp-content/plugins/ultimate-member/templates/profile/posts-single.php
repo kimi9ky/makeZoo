@@ -1,9 +1,22 @@
+	<style type="text/css">
+	.link-area {
+		width: 240px;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap
+	}
+	.modifyTab {
+
+	}
+	</style>
 	<?php while ($ultimatemember->shortcodes->loop->have_posts()) { $ultimatemember->shortcodes->loop->the_post(); $post_id = get_the_ID(); ?>
 
 		<div class="um-item">
 			<div class="um-item-link">
-				<i class="um-icon-ios-paper"></i>
-				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+				<div class="link-area">
+					<i class="um-icon-ios-paper"></i>
+					<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+				</div>
 				<a href="<?php echo apply_filters('gform_update_post/edit_url', $post_id, home_url('/?page_id=477/'));?>">修改</a>
 			</div>
 			
