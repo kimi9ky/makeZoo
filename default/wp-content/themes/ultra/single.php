@@ -291,7 +291,7 @@ return b?(parseFloat(Sa(a,"marginLeft"))||(n.contains(a.ownerDocument,a)?a.getBo
 		word-break: break-all;
 	}
 	.post_info > img{
-		margin-left: 20px;
+		margin-top: 10px;
 		margin-right: 10px;
 	}
 	.post_info .hit-count{
@@ -417,8 +417,10 @@ return b?(parseFloat(Sa(a,"marginLeft"))||(n.contains(a.ownerDocument,a)?a.getBo
 	.step-photo {
 		float: left;
 		width: 400px;
-		height: 100%;
+		height: 400px;
 		margin-right: 50px;
+		background-size: contain;
+		background-repeat: no-repeat;
 	}
 	.step-desc{
 		float: left;
@@ -433,14 +435,19 @@ return b?(parseFloat(Sa(a,"marginLeft"))||(n.contains(a.ownerDocument,a)?a.getBo
 		color:#949494;
 		word-break: break-all;
 	}
-
-    .evenodd p:nth-child(2n - 1) {
-        float: left;
-    }
-    
-    .evenodd p:nth-child(2n) {
-        float: right;
-    }
+  .evenodd p:nth-child(2n - 1) {
+      float: left;
+  }
+  .evenodd p:nth-child(2n) {
+      float: right;
+  }
+  .pic-size {
+  	background-size: cover;
+  }
+  .author-overlap{
+  	margin-left: 0 !important; 
+  	line-height: inherit !important; 
+  }
 
 </style>
 
@@ -650,8 +657,7 @@ return b?(parseFloat(Sa(a,"marginLeft"))||(n.contains(a.ownerDocument,a)?a.getBo
         $num = $kx + 1;
 echo <<<EOT
     <div class = "step-items">
-        <div class = "step-photo">
-            <img src="$img" />
+        <div class="step-photo" style="background-image:url('$img')">
         </div>
         <div class = "step-desc">
             <div class = "step-title">Step $num</div>
