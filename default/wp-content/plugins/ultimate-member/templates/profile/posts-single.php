@@ -6,18 +6,24 @@
 		white-space: nowrap
 	}
 	.modifyTab {
+		float: right;
+		border-radius: 5px;
+		padding-left: 5px;
+		padding-right: 5px;
+		background-color: rgb(237, 104, 106);
+		font-size: 13px;
+		color: white;
+		margin-top: 10px;
 
 	}
 	</style>
 	<?php while ($ultimatemember->shortcodes->loop->have_posts()) { $ultimatemember->shortcodes->loop->the_post(); $post_id = get_the_ID(); ?>
 
 		<div class="um-item">
-			<div class="um-item-link">
-				<div class="link-area">
-					<i class="um-icon-ios-paper"></i>
-					<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-				</div>
-				<a href="<?php echo apply_filters('gform_update_post/edit_url', $post_id, home_url('/?page_id=477/'));?>">修改</a>
+			<div class="um-item-link link-area">
+				<i class="um-icon-ios-paper"></i>
+				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></br>
+				<a href="<?php echo apply_filters('gform_update_post/edit_url', $post_id, home_url('/?page_id=477/'));?>"><div class="modifyTab">修改</div></a>
 			</div>
 			
 			<?php if ( has_post_thumbnail( $post_id ) ) {
