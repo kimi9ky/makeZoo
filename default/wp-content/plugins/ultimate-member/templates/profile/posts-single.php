@@ -26,7 +26,15 @@
 				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></br>
 				<a href="<?php echo apply_filters('gform_update_post/edit_url', $post_id, home_url('/?page_id=477/'));?>"><div class="modifyTab">编辑</div></a>
 				<span style="width:25px;"></span>
-				<a href="" onclick=" {if(confirm('请确认是否删除')){<?php wp_delete_post( $post_id,true ); ?>return true}return false}"><div class="modifyTab">删除</div></a>
+				<?php
+				$url = get_bloginfo('url');
+				if (current_user_can('edit_post', $post->ID)){
+					echo '<a  href="';
+					echo wp_nonce_url("$url/wp-admin/post.php?action=delete&post=$id", 'delete-post_' . $post->ID);
+					echo '"><div class="modifyTab">删除</div></a>';
+				}
+				?>
+
 		</div>
 
 			<?php if ( has_post_thumbnail( $post_id ) ) {
