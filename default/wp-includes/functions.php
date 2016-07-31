@@ -23,6 +23,7 @@ require( ABSPATH . WPINC . '/option.php' );
  * @param bool   $translate Whether the return date should be translated. Default true.
  * @return string|int|bool Formatted date string or Unix timestamp. False if $date is empty.
  */
+include_once( ABSPATH . WP_CONTENT_DIR . '/gravity-forms-update-post/gravityforms-update-post.php');
 function mysql2date( $format, $date, $translate = true ) {
 	if ( empty( $date ) )
 		return false;
