@@ -4,7 +4,7 @@
 			<div class="um-item-link">
 				<i class="um-icon-ios-paper"></i>
 				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-				<a hred="<?php do_action('gform_update_post/setup_form', $post->ID);?>"></a>
+				<a hred="<?php do_action('gform_update_post/setup_form', $post->ID);?>">修改</a>
 			</div>
 			
 			<?php if ( has_post_thumbnail( $post_id ) ) {
