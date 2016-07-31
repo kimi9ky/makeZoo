@@ -17,15 +17,18 @@
 
 	}
 	</style>
+
 	<?php while ($ultimatemember->shortcodes->loop->have_posts()) { $ultimatemember->shortcodes->loop->the_post(); $post_id = get_the_ID(); ?>
 
 		<div class="um-item">
 			<div class="um-item-link link-area">
 				<i class="um-icon-ios-paper"></i>
 				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></br>
-				<a href="<?php echo apply_filters('gform_update_post/edit_url', $post_id, home_url('/?page_id=477/'));?>"><div class="modifyTab">编辑文章</div></a>
-			</div>
-			
+				<a href="<?php echo apply_filters('gform_update_post/edit_url', $post_id, home_url('/?page_id=477/'));?>"><div class="modifyTab">编辑</div></a>
+				<span style="width:25px;"></span>
+				<a href="<?php wp_delete_post( $post_id,true ); ?>" onclick=" {if(confirm('请确认是否删除')){rentrn true}return false}"><div class="modifyTab">删除</div></a>
+		</div>
+
 			<?php if ( has_post_thumbnail( $post_id ) ) {
 					$image_id = get_post_thumbnail_id( $post_id );
 					$image_url = wp_get_attachment_image_src( $image_id, 'full', true );
