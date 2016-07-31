@@ -27,14 +27,13 @@
 				<a href="<?php echo apply_filters('gform_update_post/edit_url', $post_id, home_url('/?page_id=477/'));?>"><div class="modifyTab">编辑</div></a>
 				<span style="width:25px;"></span>
 				<?php
-				$url = get_bloginfo('url');
-				if (current_user_can('edit_post', $post->ID)){
-					echo '<a  href="';
-					echo wp_nonce_url("$url/wp-admin/post.php?action=delete&post=$id", 'delete-post_' . $post->ID);
-					echo '"><div class="modifyTab">删除</div></a>';
-				}
+					$url = get_bloginfo('url');
+					if (current_user_can('edit_post', $post_id)){
+						echo '<a  href="';
+						echo wp_nonce_url("$url/wp-admin/post.php?action=delete&post=$id", 'delete-post_' . $post_id);
+						echo '"><div class="modifyTab">删除</div></a>';
+					}
 				?>
-
 		</div>
 
 			<?php if ( has_post_thumbnail( $post_id ) ) {
