@@ -14,7 +14,8 @@
 		font-size: 13px;
 		color: white;
 		margin-top: 10px;
-
+		margin-left: 10px;
+		position:relative;
 	}
 	</style>
 
@@ -31,7 +32,6 @@
 					echo '"><div class="modifyTab">删除</div></a>';
 				}
 				?>
-				<span style="width:25px;"></span>
 				<a href="<?php echo apply_filters('gform_update_post/edit_url', $post_id, home_url('/?page_id=477/'));?>"><div class="modifyTab">编辑</div></a>
 			</div>
 
