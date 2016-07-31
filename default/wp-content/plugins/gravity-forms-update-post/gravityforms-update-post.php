@@ -854,8 +854,10 @@ class gform_update_post
 				{
 					foreach ( $field['conditionalLogic']['rules'] as $rule )
 					{
-						if (! $form['conditional'] ) $form['conditional'] = array();
-						$form['conditional'][] = $rule['fieldId'];
+						if (array_key_exists('conditional', $form)) {
+							if (!$form['conditional']) $form['conditional'] = array();
+							$form['conditional'][] = $rule['fieldId'];
+						}
 					}
 				}
 			}
