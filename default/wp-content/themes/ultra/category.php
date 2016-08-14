@@ -172,7 +172,7 @@ function clear_results() {
 function append_result(id) {
     var post = posts[id];
     var template = "<li>
-	<a href=\'http://www.makezoo.com/?p="+post['ID']+"\' rel=\"nofollow\">
+	<a href="http://www.makezoo.com/?p="+post['ID']+"">
 		<div class='wp_ulike_imgcontainer' style='background-image:url(\""+post['Image']+"\")'></div>
 	</a>
     <div>
